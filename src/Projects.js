@@ -6,7 +6,6 @@ import ghotoverflow from './ghotoverflow.jpg'
 import swiggo from './swiggo.jpg'
 import youtubedl from './youtube-dl.jpg'
 import { Grid } from "@mui/material";
-import { Link } from 'react-router-dom';
 import { styled } from "@mui/material";
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -71,7 +70,7 @@ const Projects = () => {
                                 </Grid>
                                 <Typography marginLeft="10px">{project.description}</Typography>
                                 <Typography marginLeft="10px">
-                                    <Link to={project.link} style={{ color: '#646464' }}>Github Repository</Link>
+                                    <a href={project.link} target="_blank" rel="noreferrer">Github Repository</a>
                                 </Typography>
                             </Item>
                         </Grid>
