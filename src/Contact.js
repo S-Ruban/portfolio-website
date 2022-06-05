@@ -1,14 +1,8 @@
-import { Typography } from "@mui/material";
-import { List } from "@mui/material";
-import { ListItem } from "@mui/material";
-import { ListItemButton } from "@mui/material";
-import { ListItemText } from "@mui/material";
-import { Box } from "@mui/material";
+import { Typography, List, ListItem, ListItemButton, ListItemText, Snackbar, Box } from "@mui/material";
 import { SiFacebook, SiLinkedin, SiGmail } from "react-icons/si"
 import { VscGithub } from "react-icons/vsc"
 import { BsFillTelephoneFill } from "react-icons/bs"
 import { RiWhatsappFill} from "react-icons/ri"
-import { Snackbar } from "@mui/material";
 import { useState } from "react";
 
 const Contact = () => {
