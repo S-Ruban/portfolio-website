@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/portfolio-website/static/css/main.3021779a.css",
+    "main.js": "/portfolio-website/static/js/main.fba36297.js",
+    "static/js/787.749b4a44.chunk.js": "/portfolio-website/static/js/787.749b4a44.chunk.js",
+    "static/media/resume.pdf": "/portfolio-website/static/media/resume.de69024a89461978b291.pdf",
+    "static/media/blockchain.jpg": "/portfolio-website/static/media/blockchain.b4c80d8b3c76fc85ad17.jpg",
+    "static/media/dp.jpg": "/portfolio-website/static/media/dp.5028c89072f5cce62eed.jpg",
+    "static/media/deeplearning.jpeg": "/portfolio-website/static/media/deeplearning.f3d8221d30422bc66414.jpeg",
+    "static/media/swiggo.jpg": "/portfolio-website/static/media/swiggo.71fb8c2084a10a3364c5.jpg",
+    "index.html": "/portfolio-website/index.html",
+    "main.3021779a.css.map": "/portfolio-website/static/css/main.3021779a.css.map",
+    "main.fba36297.js.map": "/portfolio-website/static/js/main.fba36297.js.map",
+    "787.749b4a44.chunk.js.map": "/portfolio-website/static/js/787.749b4a44.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3021779a.css",
+    "static/js/main.fba36297.js"
+  ]
+}
