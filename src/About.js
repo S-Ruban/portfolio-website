@@ -61,10 +61,10 @@ const About = () => {
                 My main interests in the field of Computer Science are Computer Networks, Digital Electronics, Operating Systems and Computer Architecture.
             </Typography>
             <Typography align="left" marginTop="20px">
-                I also a good amount of experience with web development, mainly in frontend.     
+                I also have a good amount of experience with web development, mainly in frontend.     
             </Typography>
             <Typography align="left" marginTop="20px">
-                I have also touched upon the Data Science field, mainly Deep Learning and Reinforcement Learning.     
+                I have also touched upon the field of Data Science, mainly Deep Learning and Reinforcement Learning.     
             </Typography>
             <Typography align="left" marginTop="20px">
                 <a href={resume} target='_blank' rel='noopener noreferrer'>My Resume</a>
