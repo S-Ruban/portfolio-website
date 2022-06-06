@@ -7,77 +7,78 @@ import youtubedl from './youtube-dl.jpg'
 import dl from './deeplearning.jpeg'
 import rl from './reinforcementlearning.jpg'
 import tnt from './trackntrigger.jpg'
-import { DiPython, DiJsBadge, DiJava, DiHtml5, DiCss3 } from 'react-icons/di'
+import { DiPython, DiJsBadge, DiJava, DiHtml5, DiCss3, DiPostgresql, DiMongodb } from 'react-icons/di'
 
-const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fafafa',
-    ...theme.typography.body2,
-    padding: theme.spacing(1),
-    color: theme.palette.text.secondary,
-  }));
+const Item = styled(Paper)(({ theme }) => 
+    ({
+        backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fafafa',
+        ...theme.typography.body2,
+        padding: theme.spacing(1),
+    }));
 
 const Projects = () => {
 
-    const projects = [
-        {
-            title: "Bandcamp",
-            description: "The quick brown fox jumps over the lazy dog",
-            imgsrc: bandcamp,
-            link: "https://github.com/S-Ruban/bandcamp-downloader",
-            languages: [<DiPython size={30} style={{color: "#3672a4"}}/>]
-        },
-        {
-            title: "Blockchain",
-            description: "The quick brown fox jumps over the lazy dog",
-            imgsrc: blockchain,
-            link: "https://github.com/S-Ruban/bits-f463-assignments/tree/main/Assignment%202",
-            languages: [<DiPython size={30} style={{color: "#3672a4"}}/>]
-        },
+    const projects = 
+    [
         {
             title: "GhotOverflow",
-            description: "The quick brown fox jumps over the lazy dog",
+            description: "A dedicated Q&A forum for students of BPHC to connect and discuss questions.",
             imgsrc: ghotoverflow,
             link: "https://github.com/S-Ruban/SEISF341",
-            languages: [<DiJsBadge size={30} style={{color: "#f7df1e"}}/>, <DiHtml5 size={30} style={{color: "#dd4b25"}}/>, <DiCss3 size={30} style={{color: "#254bdd"}} />]
+            languages: [<DiJsBadge size={30} style={{color: "#f7df1e"}}/>, <DiHtml5 size={30} style={{color: "#dd4b25"}}/>, <DiCss3 size={30} style={{color: "#254bdd"}} />, <DiMongodb size={30} style={{color: "#449a45"}}/>]
         },
         {
             title: "Swiggo",
-            description: "The quick brown fox jumps over the lazy dog",
+            description: "An online food delivery web application that connects consumers, restaurant owners and delivery people.",
             imgsrc: swiggo,
             link: "https://github.com/S-Ruban/cs-f212-mini-project",
-            languages: [<DiJsBadge size={30} style={{color: "#f7df1e"}}/>, <DiHtml5 size={30} style={{color: "#dd4b25"}}/>, <DiCss3 size={30} style={{color: "#254bdd"}} />]
+            languages: [<DiJsBadge size={30} style={{color: "#f7df1e"}}/>, <DiHtml5 size={30} style={{color: "#dd4b25"}}/>, <DiCss3 size={30} style={{color: "#254bdd"}} />, <DiPostgresql size={30} style={{color: "#31648c"}}/>]
+        },
+        {
+            title: "Portfolio Website",
+            description: "This portfolio website.",
+            imgsrc: "./portfolio.jpg",
+            link: "https://github.com/S-Ruban/portfolio-website",
+            languages: [<DiJsBadge size={30} style={{color: "#f7df1e"}}/>, <DiHtml5 size={30} style={{color: "#dd4b25"}}/>, <DiCss3 size={30} style={{color: "#254bdd"}}/>]
         },
         {
             title: "youtube-dl",
-            description: "The quick brown fox jumps over the lazy dog",
+            description: "A GUI application that uses the youtube-dl executable to download audio/video off streaming websites.",
             imgsrc: youtubedl,
             link: "https://github.com/S-Ruban/youtube-dl",
             languages: [<DiPython size={30} style={{color: "#3672a4"}}/>]
         },
         {
-            title: "Portfolio Website",
-            description: "The quick brown fox jumps over the lazy dog",
-            imgsrc: "./lite.jpg",
-            link: "https://github.com/S-Ruban/portfolio-website",
-            languages: [<DiJsBadge size={30} style={{color: "#f7df1e"}}/>, <DiHtml5 size={30} style={{color: "#dd4b25"}}/>, <DiCss3 size={30} style={{color: "#254bdd"}}/>]
+            title: "Bandcamp Downloader",
+            description: "A Selenium GUI application to automatically retireve and download the streaming link for music on the music website Bandcamp.",
+            imgsrc: bandcamp,
+            link: "https://github.com/S-Ruban/bandcamp-downloader",
+            languages: [<DiPython size={30} style={{color: "#3672a4"}}/>]
         },
         {
             title: "Deep Learning",
-            description: "The quick brown fox jumps over the lazy dog",
+            description: "Assignments done as part of the course CS F425 (Deep Learning).",
             imgsrc: dl,
             link: "https://github.com/S-Ruban/cs-f425-assignments",
             languages: [<DiPython size={30} style={{color: "#3672a4"}}/>]
         },
         {
             title: "Reinforcement Learning",
-            description: "The quick brown fox jumps over the lazy dog",
+            description: "Implementation of an RL agent that plays the board game Connect 4.",
             imgsrc: rl,
             link: "https://github.com/S-Ruban/cs-f317-project",
             languages: [<DiPython size={30} style={{color: "#3672a4"}}/>]
         },
         {
+            title: "Fake Product Identification System Using Blockchain Technology",
+            description: "A Blockchain application to detect fake products through QR code/barcode.",
+            imgsrc: blockchain,
+            link: "https://github.com/S-Ruban/bits-f463-assignments/tree/main/Assignment%202",
+            languages: [<DiPython size={30} style={{color: "#3672a4"}}/>]
+        },
+        {
             title: "Track-n-Trigger Android App",
-            description: "The quick brown fox jumps over the lazy dog",
+            description: "A utility android app.",
             imgsrc: tnt,
             link: "https://github.com/S-Ruban/TracknTrigger/tree/master",
             languages: [<DiJava size={30} style={{color: "#3672a4"}}/>]
@@ -85,12 +86,19 @@ const Projects = () => {
     ]
 
     return ( 
-        <div className="Projects">
+        <div className="Projects" style={{marginLeft: "50px"}}>
             <Typography variant="h4" marginTop="50px" marginBottom="20px">Projects I've done</Typography>
-            <Grid container direction="row" align="left">
+            <Grid align="left">
+                <Typography variant="p" marginBottom="20px">
+                    For more of my work, check out my <nbsp />
+                    <a href="https://github.com/S-Ruban?tab=repositories" target="_blank" rel="noreferrer">Github Repositories</a>.
+                </Typography>
+            </Grid>
+            <Grid container direction="row" align="left" marginTop="20px">
             {
-                projects.map((project) => (
-                    <Grid item xs={12} borderRadius="10px" marginLeft="50px" marginRight="50px" marginBottom="50px" marginTop="50">
+                projects.map((project) => 
+                (
+                    <Grid item xs={12} borderRadius="10px" marginRight="50px" marginBottom="50px">
                         <Item>
                             <Typography variant="h4" align="center">{project.title}</Typography>
                             <Grid align="center" marginTop="10px" marginBottom="10px">
@@ -100,11 +108,12 @@ const Projects = () => {
                             <Typography variant="p" marginLeft="10px">
                                 <a href={project.link} target="_blank" rel="noreferrer">Github Repository</a>
                             </Typography>
-                            <Grid>
-                                <Typography variant="p" marginLeft="10px">Languages: </Typography>
+                            <Grid marginLeft="10px">
+                                <Typography variant="p">Languages: </Typography>
                                 <Grid container direction="row" align="left">
                                 {
-                                    project.languages.map((icon) => (
+                                    project.languages.map((icon) => 
+                                    (
                                         <Grid item marginRight="10px">
                                             {icon}
                                         </Grid>
