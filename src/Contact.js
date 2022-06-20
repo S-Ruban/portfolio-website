@@ -20,7 +20,7 @@ const Contact = () => {
     [
         { platform: "Facebook", link: "https://www.facebook.com/ruban.srirambabu", icon: <SiFacebook size={30} style={{color: "#036ce4"}}/> },
         { platform: "Github", link: "https://github.com/S-Ruban", icon: <VscGithub size={30} style={{color: "#792f9f"}}/> },
-        { platform: "Linkedin", link: "https://www.linkedin.com/in/ruban-srirambabu-68b09b1a0/", icon: <SiLinkedin size={30} style={{color: "#0a66c2"}}/> }
+        { platform: "Linkedin", link: "https://www.linkedin.com/in/ruban-srirambabu/", icon: <SiLinkedin size={30} style={{color: "#0a66c2"}}/> }
     ]
 
     const nlc = 
