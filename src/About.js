@@ -47,7 +47,7 @@ const About = () => {
     [
         { code: "BITS F386", title: "Quantum Information and Computing" }, { code: "CS F317", title: "Reinforcement Learning" }, { code: "CS F425", title: "Deep Learning" },
         { code: "BITS F463", title: "Cryptography" }, { code: "CS F441", title: "Selected Topics from Computer Science: Introduction to Computational Neuroscience" }, { code: "IS F341", title: "Software Engineering" },
-        { code: "CS G518", title: "Internet of Things: Design and Development" }, { code: "CS G527, title: "Cloud Computing" }
+        { code: "CS G518", title: "Internet of Things: Design and Development" }, { code: "CS G527", title: "Cloud Computing" }
     ];
 
     return ( 
