@@ -55,7 +55,7 @@ const About = () => {
             <Typography variant="h4" marginTop="50px" marginBottom="20px">About me</Typography>
             <img src={dp} alt=""/>
             <Typography align="left" marginTop="20px">
-                I am Ruban S, a final year Computer Science undergraduate at <a href="https://www.bits-pilani.ac.in/hyderabad/" target='_blank' rel='noopener noreferrer'>Birla Institute of Technology and Science, Hyderabad Campus</a>. <br/>
+                I am Ruban S, a final year Computer Science undergraduate at <a href="https://www.bits-pilani.ac.in/hyderabad/" target='_blank' rel='noopener noreferrer'>Birla Institute of Technology and Science, Pilani - Hyderabad Campus</a>. <br/>
                 Prior to my undergrad, I was a high school student at <a href="https://bishopcottonboysschool.edu.in/" target='_blank' rel='noopener noreferrer'>Bishop Cotton Boys' School, Bangalore</a>.
             </Typography>
             <Typography align="left" marginTop="20px">
