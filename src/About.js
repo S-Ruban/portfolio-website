@@ -59,7 +59,7 @@ const About = () => {
                 Prior to my undergrad, I was a high school student at <a href="https://bishopcottonboysschool.edu.in/" target='_blank' rel='noopener noreferrer'>Bishop Cotton Boys' School, Bangalore</a>.
             </Typography>
             <Typography align="left" marginTop="20px">
-                My main interests in the field of Computer Science are Computer Networks, Digital Electronics, Operating Systems and Computer Architecture.
+                My main interests are in the field of Computer Science are Computer Networks, Digital Electronics, Operating Systems and Computer Architecture.
             </Typography>
             <Typography align="left" marginTop="20px">
                 I also have a good amount of experience with web development, mainly in frontend.     
