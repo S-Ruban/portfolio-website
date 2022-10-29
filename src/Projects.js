@@ -79,13 +79,6 @@ const Projects = () => {
             languages: [<DiPython size={30} style={{color: "#3672a4"}}/>]
         },
         {
-            title: "Track-n-Trigger Android App",
-            description: "A utility android app.",
-            imgsrc: tnt,
-            link: "https://github.com/S-Ruban/TracknTrigger/tree/master",
-            languages: [<DiJava size={30} style={{color: "#3672a4"}}/>]
-        },
-        {
             title: "GUI Installer",
             description: "A customizable GUI application that lets you install applications by running scripts",
             imgsrc: installer,
@@ -98,6 +91,13 @@ const Projects = () => {
             imgsrc: squaredle,
             link: "https://github.com/S-Ruban/squaredle-solver",
             languages: [<DiPython size={30} style={{color: "#3672a4"}}/>]
+        },
+        {
+            title: "Track-n-Trigger Android App",
+            description: "A utility android app.",
+            imgsrc: tnt,
+            link: "https://github.com/S-Ruban/TracknTrigger/tree/master",
+            languages: [<DiJava size={30} style={{color: "#3672a4"}}/>]
         }
     ]
 
