@@ -1,5 +1,5 @@
 import { Typography, Grid, Box, ListItem, ListItemText } from "@mui/material";
-import dp from './dp.jpg'
+import dp from './images/dp.jpg'
 import { DiJava, DiJsBadge, DiPython, DiReact, DiCss3, DiHtml5, DiNodejsSmall, DiMongodb, DiMysql, DiPostgresql, DiLinux, DiWindows } from "react-icons/di"
 import resume from './resume.pdf'
 

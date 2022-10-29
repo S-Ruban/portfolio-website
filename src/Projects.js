@@ -1,12 +1,14 @@
 import { Typography, Grid, styled, Paper } from "@mui/material";
-import bandcamp from './bandcamp.jpg'
-import blockchain from './blockchain.jpg'
-import ghotoverflow from './ghotoverflow.jpg'
-import swiggo from './swiggo.jpg'
-import youtubedl from './youtube-dl.jpg'
-import dl from './deeplearning.jpeg'
-import rl from './reinforcementlearning.jpg'
-import tnt from './trackntrigger.jpg'
+import bandcamp from './images/bandcamp.jpg'
+import blockchain from './images/blockchain.jpg'
+import ghotoverflow from './images/ghotoverflow.jpg'
+import swiggo from './images/swiggo.jpg'
+import youtubedl from './images/youtube-dl.jpg'
+import dl from './images/deeplearning.jpeg'
+import rl from './images/reinforcementlearning.jpg'
+import tnt from './images/trackntrigger.jpg'
+import installer from './images/installer.png'
+import squaredle from './images/squaredle.png'
 import { DiPython, DiJsBadge, DiJava, DiHtml5, DiCss3, DiPostgresql, DiMongodb } from 'react-icons/di'
 
 const Item = styled(Paper)(({ theme }) => 
@@ -82,6 +84,20 @@ const Projects = () => {
             imgsrc: tnt,
             link: "https://github.com/S-Ruban/TracknTrigger/tree/master",
             languages: [<DiJava size={30} style={{color: "#3672a4"}}/>]
+        },
+        {
+            title: "GUI Installer",
+            description: "A customizable GUI application that lets you install applications by running scripts",
+            imgsrc: installer,
+            link: "https://github.com/S-Ruban/GUI_Installer",
+            languages: [<DiJava size={30} style={{color: "#3672a4"}}/>]
+        },
+        {
+            title: "Squaredle Solver",
+            description: "A python script that extracts the squaredle board of the day and finds all possible words.",
+            imgsrc: squaredle,
+            link: "https://github.com/S-Ruban/squaredle-solver",
+            languages: [<DiPython size={30} style={{color: "#3672a4"}}/>]
         }
     ]
 
