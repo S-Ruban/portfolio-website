@@ -74,6 +74,7 @@ const About = () => {
             <Grid container direction="row" align="left">
             <img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/c_original_logo_icon_146611.png" width="32px" height="32px" alt="" style={{marginLeft: "10px"}}/>
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png" width="32px" height="32px" alt="" style={{marginLeft: "10px"}}/>
+            <img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_verilog_icon_130092.png" width="32px" height="32px" alt="" style={{marginLeft: "10px"}}/>
             {
                 languages.map((icon) => 
                 (

@@ -9,6 +9,7 @@ import rl from './images/reinforcementlearning.jpg'
 import tnt from './images/trackntrigger.jpg'
 import installer from './images/installer.png'
 import squaredle from './images/squaredle.png'
+import sim2600 from './images/sim2600.jpg'
 import { DiPython, DiJsBadge, DiJava, DiHtml5, DiCss3, DiPostgresql, DiMongodb } from 'react-icons/di'
 
 const Item = styled(Paper)(({ theme }) => 
@@ -39,9 +40,16 @@ const Projects = () => {
         {
             title: "Portfolio Website",
             description: "This portfolio website.",
-            imgsrc: "./portfolio.jpg",
+            imgsrc: "",
             link: "https://github.com/S-Ruban/portfolio-website",
             languages: [<DiJsBadge size={30} style={{color: "#f7df1e"}}/>, <DiHtml5 size={30} style={{color: "#dd4b25"}}/>, <DiCss3 size={30} style={{color: "#254bdd"}}/>]
+        },
+        {
+            title: "Sim2600",
+            description: "A python simulation of the 6502 chip at the transistor level to reverse-engineer logic gates.",
+            imgsrc: sim2600,
+            link: "https://github.com/S-Ruban/Sim2600",
+            languages: [<DiPython size={30} style={{color: "#3672a4"}}/>]
         },
         {
             title: "youtube-dl",
