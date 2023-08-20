@@ -1,38 +1,32 @@
 import { Typography, Grid, Box, ListItem, ListItemText } from "@mui/material";
 import dp from './images/dp.jpg'
-import { DiJava, DiJsBadge, DiPython, DiReact, DiCss3, DiHtml5, DiNodejsSmall, DiMongodb, DiMysql, DiPostgresql, DiLinux, DiWindows } from "react-icons/di"
-import resume from './resume.pdf'
+import { DiJava, DiJsBadge, DiPython, DiLinux, DiWindows, DiGit, DiJenkins} from "react-icons/di"
+import { SiGnubash, SiPerforce, SiJira } from 'react-icons/si';
+import {Helmet} from "react-helmet";
 
 const About = () => {
 
     const languages = 
     [
-        <DiJava size={40} style={{color: "#3672a4"}} onClick={()=> window.open("https://www.java.com/en/download/help/whatis_java.html", "_blank")}/>,
-        <DiJsBadge size={40} style={{color: "#f7df1e"}} onClick={()=> window.open("https://www.javascript.com/", "_blank")}/>,
-        <DiPython size={40} style={{color: "#3672a4"}} onClick={()=> window.open("https://www.python.org/about/", "_blank")}/>
-    ];
-    const frontend = 
-    [
-        <DiReact size={40} style={{color: "#5ed3f3"}} onClick={()=> window.open("https://reactjs.org/", "_blank")}/>,
-        <DiCss3 size={40} style={{color: "#254bdd"}} onClick={()=> window.open("https://developer.mozilla.org/en-US/docs/Web/CSS", "_blank")}/>,
-        <DiHtml5 size={40} style={{color: "#dd4b25"}} onClick={()=> window.open("https://developer.mozilla.org/en-US/docs/Web/HTML", "_blank")}/>
-    ];
-    const backend = 
-    [
-        <DiNodejsSmall size={40} style={{color: "#68a063"}} onClick={()=> window.open("https://nodejs.org/en/about/", "_blank")}/>
-    ];
-    const databases = 
-    [
-        <DiMongodb size={40} style={{color: "#449a45"}} onClick={()=> window.open("https://www.mongodb.com/", "_blank")}/>,
-        <DiMysql size={40} style={{color: "#00618a"}} onClick={()=> window.open("https://www.mysql.com/", "_blank")}/>,
-        <DiPostgresql size={40} style={{color: "#31648c"}} onClick={()=> window.open("https://www.postgresql.org/about/", "_blank")}/>
+        <DiPython size={32} style={{color: "#3672a4"}} onClick={()=> window.open("https://www.python.org/about/", "_blank")}/>,
+        <SiGnubash size={32} style={{color: "#54b255"}} onClick={()=> window.open("https://www.gnu.org/software/bash/", "_blank")}/>,
+        <DiJava size={32} style={{color: "#3672a4"}} onClick={()=> window.open("https://www.java.com/en/download/help/whatis_java.html", "_blank")}/>,
+        <DiJsBadge size={32} style={{color: "#f7df1e"}} onClick={()=> window.open("https://www.javascript.com/", "_blank")}/>
     ];
 
     const opsys = 
     [
-        <DiLinux size={40}/>,
-        <DiWindows size={40} style={{color: "#0183dc"}} />
+        <DiLinux size={32}/>,
+        <DiWindows size={32} style={{color: "#0183dc"}} />
     ];
+
+    const tools = 
+    [
+        <SiPerforce size={32} style={{color: "#020f1f"}} onClick={()=> window.open("https://www.perforce.com/products/helix-core-apps/helix-visual-client-p4v", "_blank")}/>,
+        <DiGit size={32} style={{color: "#e7573b"}} onClick={()=> window.open("https://git-scm.com/", "_blank")}/>,
+        <SiJira size={32} style={{color: "#4c86fc"}} onClick={()=> window.open("https://www.atlassian.com/software/jira", "_blank")}/>,
+        <DiJenkins size={32} style={{color: "#344e60"}} onClick={()=> window.open("https://www.gnu.org/software/bash/", "_blank")}/>
+    ]
 
     const cdcs = 
     [
@@ -51,66 +45,51 @@ const About = () => {
     ];
 
     return ( 
-        <div className="About" style={{marginLeft: "50px"}}>
+        <div className="About" style={{marginLeft: "100px", marginRight: "100px"}}>
+            <Helmet>
+                <title>Ruban S - About</title>
+            </Helmet>
             <Typography variant="h4" marginTop="50px" marginBottom="20px">About me</Typography>
-            <img src={dp} alt=""/>
+            <img src={dp} alt="" width="20%" height="20%"/>
             <Typography align="left" marginTop="20px">
-                I am Ruban S, a final year Computer Science undergraduate at <a href="https://www.bits-pilani.ac.in/hyderabad/" target='_blank' rel='noopener noreferrer'>Birla Institute of Technology and Science, Pilani - Hyderabad Campus</a>. <br/>
-                Prior to my undergrad, I was a high school student at <a href="https://bishopcottonboysschool.edu.in/" target='_blank' rel='noopener noreferrer'>Bishop Cotton Boys' School, Bangalore</a>.
+                I am Ruban S, an Associate Engineer at <a href="https://www.mips.com/" target='_blank' rel='noopener noreferrer'>MIPS Embedded Technologies</a>, currently working in the Performance Modelling division. <br/>
+                I am currently working in the CPU Performance Modelling divison. My main responsibilities are:
+                <ul>
+                    <li>Automating the CPU benchmarking against industry-standard CPU benchmarks</li>
+                    <li>Diagnosing performance bottlenecks of the CPU using Discovery Visual Environment (DVE), a software tool that helps to design, simulate, and verify digital integrated circuits (ICs) efficiently</li>
+                    <li>Performing RTL vs Simulation correlation, to identify differences between RTL and simulation results</li>
+                    <li>Developed performance analyzing tools using Python, which enables us to diagnose and find the root cause of certain performance bottlenecks in the CPU.</li>
+                    <li>Developing a CPU performance simulator using C++, to model the CPU against industry-standard benchmarks.</li>
+                </ul>
             </Typography>
             <Typography align="left" marginTop="20px">
-                My main interests in the field of Computer Science are Computer Networks, Digital Electronics, Operating Systems and Computer Architecture.
+                My main professional interests are Computer Architecture and Digital Electronics. I am also open to exploring in the fields of Compilers, Computer Networks and Operating Systems.
             </Typography>
             <Typography align="left" marginTop="20px">
-                I also have a good amount of experience with web development, mainly in frontend.     
+                I have graduated with a degree in B.E. Computer Science (2023) at <a href="https://www.bits-pilani.ac.in/hyderabad/" target='_blank' rel='noopener noreferrer'>Birla Institute of Technology and Science, Pilani - Hyderabad Campus</a>. <br/>
+                During my undergraduate, I was a teaching assistant in the course CS F342 (Computer Architecture). As a TA, I have helped students in the labs with MIPS assembly programming and general doubts in the course and helped the professors with setting lab examination questions and solutions.
             </Typography>
             <Typography align="left" marginTop="20px">
-                I have also touched upon the field of Data Science, mainly Deep Learning and Reinforcement Learning.     
-            </Typography>
-            <Typography align="left" marginTop="20px">
-                <a href={resume} target='_blank' rel='noopener noreferrer'>My Resume</a>
+                Coming to my personal hobbies, I enjoy playing table-tennis, basketball and badminton during my spare time. I am an avid listener of various subgenres of rock and metal, my favourite being progressive rock and classic 1970s rock. <br/>
+                Some of my favourite bands are: <br/>
+                <ul>
+                    <li><a href="http://opeth.com/bio" target='_blank' rel='noopener noreferrer'>Opeth</a></li>
+                    <li><a href="https://porcupinetree.com/" target='_blank' rel='noopener noreferrer'>Porcupine Tree</a></li>
+                    <li><a href="https://www.rush.com/band/" target='_blank' rel='noopener noreferrer'>Rush</a></li>
+                    <li><a href="https://qotsa.com/" target='_blank' rel='noopener noreferrer'>Queens of the Stone Age</a></li>
+                    <li><a href="https://www.dgmlive.com/king-crimson" target='_blank' rel='noopener noreferrer'>King Crimson</a></li>
+                    <li><a href="https://hakenmusic.com/" target='_blank' rel='noopener noreferrer'>Haken</a></li>
+                </ul>
+                I also enjoy playing <a href="https://www.ageofempires.com/games/aoeiide/" target='_blank' rel='noopener noreferrer'>Age of Empires II</a>, one of the most famous real-time strategy PC games of all time.
             </Typography>
             <Typography variant="h5" align="left" marginTop="50px" marginBottom="10px">Programming Languages</Typography>
             <Grid container direction="row" align="left">
             <img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/c_original_logo_icon_146611.png" width="32px" height="32px" alt="" style={{marginLeft: "10px"}}/>
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png" width="32px" height="32px" alt="" style={{marginLeft: "10px"}}/>
+            <img src="https://avatars.githubusercontent.com/u/10872782?s=200&v=4" width="32px" height="32px" alt="" style={{marginLeft: "10px"}}/>
             <img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_verilog_icon_130092.png" width="32px" height="32px" alt="" style={{marginLeft: "10px"}}/>
             {
                 languages.map((icon) => 
-                (
-                    <Grid item marginRight="10px">
-                        {icon}
-                    </Grid>
-                ))
-            }
-            </Grid>
-            <Typography variant="h5" align="left" marginTop="20px" marginBottom="10px">Frontend</Typography>
-            <Grid container direction="row" align="left">
-            {
-                frontend.map((icon) => 
-                (
-                    <Grid item marginRight="10px">
-                        {icon}
-                    </Grid>
-                ))
-            }
-            </Grid>
-            <Typography variant="h5" align="left" marginTop="20px" marginBottom="10px">Backend</Typography>
-            <Grid container direction="row" align="left">
-            {
-                backend.map((icon) => 
-                (
-                    <Grid item marginRight="10px">
-                        {icon}
-                    </Grid>
-                ))
-            }
-            </Grid>
-            <Typography variant="h5" align="left" marginTop="20px" marginBottom="10px">Databases</Typography>
-            <Grid container direction="row" align="left">
-            <img src="https://www.oracle.com/a/ocom/img/sql-dev.svg" width="48px" height="48px" alt="" style={{marginLeft: "10px"}} onClick={()=> window.open("https://www.oracle.com/in/database/technologies/appdev/sql.html", "_blank")}/>
-            {
-                databases.map((icon) => 
                 (
                     <Grid item marginRight="10px">
                         {icon}
@@ -122,6 +101,17 @@ const About = () => {
             <Grid container direction="row" align="left">
             {
                 opsys.map((icon) => 
+                (
+                    <Grid item marginRight="10px">
+                        {icon}
+                    </Grid>
+                ))
+            }
+            </Grid>
+            <Typography variant="h5" align="left" marginTop="20px" marginBottom="10px">Tools</Typography>
+            <Grid container direction="row" align="left">
+            {
+                tools.map((icon) => 
                 (
                     <Grid item marginRight="10px">
                         {icon}

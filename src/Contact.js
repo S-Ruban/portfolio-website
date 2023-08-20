@@ -4,6 +4,15 @@ import { VscGithub } from "react-icons/vsc"
 import { BsFillTelephoneFill } from "react-icons/bs"
 import { RiWhatsappFill} from "react-icons/ri"
 import { useState } from "react";
+import {Helmet} from "react-helmet";
+
+const relAlign = {
+    display: 'flex',
+    justifyContent: 'space-between',
+    width: '100%',
+    paddingLeft: '5%', 
+    paddingRight: '5%',
+  };
 
 const Contact = () => {
 
@@ -18,9 +27,9 @@ const Contact = () => {
 
     const lc = 
     [
-        { platform: "Facebook", link: "https://www.facebook.com/ruban.srirambabu", icon: <SiFacebook size={30} style={{color: "#036ce4"}}/> },
+        { platform: "Linkedin", link: "https://www.linkedin.com/in/ruban-srirambabu/", icon: <SiLinkedin size={30} style={{color: "#0a66c2"}}/> },
         { platform: "Github", link: "https://github.com/S-Ruban", icon: <VscGithub size={30} style={{color: "#792f9f"}}/> },
-        { platform: "Linkedin", link: "https://www.linkedin.com/in/ruban-srirambabu/", icon: <SiLinkedin size={30} style={{color: "#0a66c2"}}/> }
+        { platform: "Facebook", link: "https://www.facebook.com/ruban.srirambabu", icon: <SiFacebook size={30} style={{color: "#036ce4"}}/> }
     ]
 
     const nlc = 
@@ -33,13 +42,16 @@ const Contact = () => {
 
     return ( 
         <div className="Contact">
-            <Typography variant="h4" marginTop="50px">Ways to contact me</Typography>
+            <Helmet>
+                <title>Ruban S - Contact</title>
+            </Helmet>
+            <Typography variant="h4" marginTop="60px" align="left" style={relAlign}>Ways to contact me</Typography>
             <Box sx={{ width: '100%', bgcolor: 'background.paper' }} marginLeft="50px" maxWidth="400px">
                 <List>
                 {
                     lc.map((contact) => 
                     (
-                        <ListItem>
+                        <ListItem style={relAlign}>
                             <ListItemButton component="a" href={contact.link} target="_blank" rel="noreferrer">
                                 {contact.icon}
                                 <Typography variant="p">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Typography>
@@ -51,7 +63,7 @@ const Contact = () => {
                 {
                     nlc.map((contact) => 
                     (
-                        <ListItem onClick={() => 
+                        <ListItem style={relAlign} onClick={() => 
                             {
                                 navigator.clipboard.writeText(contact.contact);
                                 setOpen(true);
