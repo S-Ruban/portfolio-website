@@ -37,7 +37,7 @@ const Contact = () => {
         { platform: "Mobile", contact: "+91 89712 62405", icon: <BsFillTelephoneFill size={30}/> },
         { platform: "WhatsApp", contact: "+91 89712 62405", icon: <RiWhatsappFill size={30} style={{color: "#29c44d"}}/> },
         { platform: "Personal Email", contact: "s.ruban2000@gmail.com", icon: <SiGmail size={30} style={{color: "#cd3c30"}}/> },
-        { platform: "University Email", contact: "f20190097@hyderabad.bits-pilani.ac.in", icon: <SiGmail size={30} style={{color: "#cd3c30"}}/> }
+        { platform: "University Email", contact: "f20190097h@alumni.bits-pilani.ac.in", icon: <SiGmail size={30} style={{color: "#cd3c30"}}/> }
     ]
 
     return ( 
