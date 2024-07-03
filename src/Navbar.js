@@ -32,6 +32,10 @@ const Navbar = () => {
             </Typography>
             <Typography variant="h6" color="inherit" display="inline" marginRight="20px">|</Typography>
             <Typography variant="h6" color="inherit" display="inline" marginRight="20px">
+            <a href="https://medium.com/@s.ruban2000/computer-architecture-blog-f9973ffae74c" target='_blank' rel='noopener noreferrer' style={{ color: '#FFF', textDecoration: 'none' }}>Blog</a>
+            </Typography>
+            <Typography variant="h6" color="inherit" display="inline" marginRight="20px">|</Typography>
+            <Typography variant="h6" color="inherit" display="inline" marginRight="20px">
               <Link to="/contact" style={{ color: '#FFF', textDecoration: 'none' }}>Contact</Link>
             </Typography>
             <Typography variant="h6" color="inherit" display="inline" marginRight="20px">|</Typography>

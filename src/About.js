@@ -52,25 +52,26 @@ const About = () => {
             <Typography variant="h4" marginTop="50px" marginBottom="20px">About me</Typography>
             <img src={dp} alt="" width="20%" height="20%"/>
             <Typography align="left" marginTop="20px">
-                I am Ruban S, an Associate Engineer at <a href="https://www.mips.com/" target='_blank' rel='noopener noreferrer'>MIPS Embedded Technologies</a>, currently working in the Performance Modelling division. <br/>
-                I am currently working in the CPU Performance Modelling divison. My main responsibilities are:
+                I am Ruban S, an Associate Engineer at <a href="https://www.mips.com/" target='_blank' rel='noopener noreferrer'>MIPS Technologies</a>, home to the MIPS ISA, currently working in the Performance and Architecture Team. <br/>
+                My main responsibilities are:
                 <ul>
-                    <li>Automating the CPU benchmarking against industry-standard CPU benchmarks</li>
-                    <li>Diagnosing performance bottlenecks of the CPU using Discovery Visual Environment (DVE), a software tool that helps to design, simulate, and verify digital integrated circuits (ICs) efficiently</li>
-                    <li>Performing RTL vs Simulation correlation, to identify differences between RTL and simulation results</li>
-                    <li>Developed performance analyzing tools using Python, which enables us to diagnose and find the root cause of certain performance bottlenecks in the CPU.</li>
-                    <li>Developing a CPU performance simulator using C++, to model the CPU against industry-standard benchmarks.</li>
+                    <li>Diagnosing performance bottlenecks of the CPU using industry-standard EDA tools.</li>
+                    <li>Correlating the performance model with RTL simulation runs.</li>
+                    <li>Developing microbenchmarks using C and RISC-V assembly to identify performance bottlenecks.</li>
+                    <li>Identifying compiler optimizations, including flags and instruction re-ordering, to generate optimized benchmark code.</li>
+                    <li>Developed  visualization tools and scripts in Python and Shell to extact and analyze performance data from RTL simulations and performance model runs.</li>
+                    <li>Modelling modules of the CPU in the performance simulator using C++.</li>
                 </ul>
             </Typography>
             <Typography align="left" marginTop="20px">
-                My main professional interests are Computer Architecture and Digital Electronics. I am also open to exploring in the fields of Compilers, Computer Networks and Operating Systems.
+            I have a keen interest in learning about how computers work at a low-level, and seek to explore novel ideas in Computer Architecture, Compilers, Operating Systems and Networks. I'm also interested in reading and exploring technological innovations in retro computers and devices.
             </Typography>
             <Typography align="left" marginTop="20px">
                 I have graduated with a degree in B.E. Computer Science (2023) at <a href="https://www.bits-pilani.ac.in/hyderabad/" target='_blank' rel='noopener noreferrer'>Birla Institute of Technology and Science, Pilani - Hyderabad Campus</a>. <br/>
                 During my undergraduate, I was a teaching assistant in the course CS F342 (Computer Architecture). As a TA, I have helped students in the labs with MIPS assembly programming and general doubts in the course and helped the professors with setting lab examination questions and solutions.
             </Typography>
             <Typography align="left" marginTop="20px">
-                Coming to my personal hobbies, I enjoy playing table-tennis, basketball and badminton during my spare time. I am an avid listener of various subgenres of rock and metal, my favourite being progressive rock and classic 1970s rock. <br/>
+                Coming to my personal hobbies, I enjoy playing table-tennis, basketball and badminton during my spare time. I am an avid listener of various subgenres of rock and metal, my favourite being progressive rock. <br/>
                 Some of my favourite bands are: <br/>
                 <ul>
                     <li><a href="http://opeth.com/bio" target='_blank' rel='noopener noreferrer'>Opeth</a></li>

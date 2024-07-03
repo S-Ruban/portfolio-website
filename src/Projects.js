@@ -1,5 +1,5 @@
 import { Typography, Grid, styled, Paper } from "@mui/material";
-import { DiPython, DiJsBadge, DiJava, DiHtml5, DiCss3, DiPostgresql, DiMongodb } from 'react-icons/di'
+import { DiPython, DiJsBadge, DiHtml5, DiCss3, DiPostgresql, DiMongodb } from 'react-icons/di'
 import {Helmet} from "react-helmet";
 
 const Item = styled(Paper)(({ theme }) => 
@@ -21,6 +21,14 @@ const Projects = () => {
 
     const projects = 
     [
+        {
+            title: "perf_sim",
+            description: "A cycle-accurate microarchitecture implementation of a simple in-order superscalar RISC-V CPU, built on top of Spike using C++.",
+            link: "https://github.com/S-Ruban/perf_sim",
+            languages: [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png" width="32px" height="32px" alt="" style={{marginLeft: "10px"}}/>,
+                <img src="https://avatars.githubusercontent.com/u/10872782?s=200&v=4" width="32px" height="32px" alt="" style={{marginLeft: "10px"}}/>
+            ]
+        },
         {
             title: "Sim2600",
             description: "A python simulation of the 6502 chip at the transistor level to reverse-engineer logic gates.",
@@ -68,36 +76,6 @@ const Projects = () => {
             description: "An online food delivery web application that connects consumers, restaurant owners and delivery people.",
             link: "https://github.com/S-Ruban/cs-f212-mini-project",
             languages: [<DiJsBadge size={30} style={{color: "#f7df1e"}}/>, <DiHtml5 size={30} style={{color: "#dd4b25"}}/>, <DiCss3 size={30} style={{color: "#254bdd"}} />, <DiPostgresql size={30} style={{color: "#31648c"}}/>]
-        },
-        {
-            title: "Deep Learning",
-            description: "Assignments done as part of the course CS F425 (Deep Learning).",
-            link: "https://github.com/S-Ruban/cs-f425-assignments",
-            languages: [<DiPython size={30} style={{color: "#3672a4"}}/>]
-        },
-        {
-            title: "Reinforcement Learning",
-            description: "Implementation of an RL agent that plays the board game Connect 4.",
-            link: "https://github.com/S-Ruban/cs-f317-project",
-            languages: [<DiPython size={30} style={{color: "#3672a4"}}/>]
-        },
-        {
-            title: "GUI Installer",
-            description: "A customizable GUI application that lets you install applications by running scripts",
-            link: "https://github.com/S-Ruban/GUI_Installer",
-            languages: [<DiJava size={30} style={{color: "#3672a4"}}/>]
-        },
-        {
-            title: "Fake Product Identification System Using Blockchain Technology",
-            description: "A Blockchain application to detect fake products through QR code/barcode.",
-            link: "https://github.com/S-Ruban/bits-f463-assignments/tree/main/Assignment%202",
-            languages: [<DiPython size={30} style={{color: "#3672a4"}}/>]
-        },
-        {
-            title: "Track-n-Trigger Android App",
-            description: "A utility android app.",
-            link: "https://github.com/S-Ruban/TracknTrigger/tree/master",
-            languages: [<DiJava size={30} style={{color: "#3672a4"}}/>]
         }
     ]
 
