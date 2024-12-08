@@ -52,19 +52,13 @@ const About = () => {
             <Typography variant="h4" marginTop="50px" marginBottom="20px">About me</Typography>
             <img src={dp} alt="" width="20%" height="20%"/>
             <Typography align="left" marginTop="20px">
-                I am Ruban S, an Associate Engineer at <a href="https://www.mips.com/" target='_blank' rel='noopener noreferrer'>MIPS Technologies</a>, home to the MIPS ISA, currently working in the Performance and Architecture Team. <br/>
-                My main responsibilities are:
-                <ul>
-                    <li>Diagnosing performance bottlenecks of the CPU using industry-standard EDA tools.</li>
-                    <li>Correlating the performance model with RTL simulation runs.</li>
-                    <li>Developing microbenchmarks using C and RISC-V assembly to identify performance bottlenecks.</li>
-                    <li>Identifying compiler optimizations, including flags and instruction re-ordering, to generate optimized benchmark code.</li>
-                    <li>Developed  visualization tools and scripts in Python and Shell to extact and analyze performance data from RTL simulations and performance model runs.</li>
-                    <li>Modelling modules of the CPU in the performance simulator using C++.</li>
-                </ul>
+            I am a Silicon Architect at <a href="https://about.google/intl/ALL_in/">Google</a>, currently working on Google's Tensor SoCs. <br/> <br/>
+
+            Prior to this, I was an Associate Engineer at <a href="https://mips.com/">MIPS Technologies</a>, home to the MIPS ISA, where I worked in the Performance and Architecture Team. I have worked on performance modelling and correlation on Out-of-Order and In-Order Superscalar Multi-threaded CPUs based on the RISC-V ISA. I have worked with microbenchmarks like Dhrystone, Coremark, memcpy, daxpy, and also worked with larger benchmarks like SPECint.
+
             </Typography>
             <Typography align="left" marginTop="20px">
-            I have a keen interest in learning about how computers work at a low-level, and seek to explore novel ideas in Computer Architecture, Compilers, Operating Systems and Networks. I'm also interested in reading and exploring technological innovations in retro computers and devices.
+                I have a keen interest in learning about how computers work at a low-level, and seek to explore novel ideas in Computer Architecture, Compilers, Operating Systems and Networks. I'm also interested in reading and exploring technological innovations in retro computers and devices, and like to expand my knowledge in the field of semiconductors and VLSI.
             </Typography>
             <Typography align="left" marginTop="20px">
                 I have graduated with a degree in B.E. Computer Science (2023) at <a href="https://www.bits-pilani.ac.in/hyderabad/" target='_blank' rel='noopener noreferrer'>Birla Institute of Technology and Science, Pilani - Hyderabad Campus</a>. <br/>
@@ -76,10 +70,9 @@ const About = () => {
                 <ul>
                     <li><a href="http://opeth.com/bio" target='_blank' rel='noopener noreferrer'>Opeth</a></li>
                     <li><a href="https://porcupinetree.com/" target='_blank' rel='noopener noreferrer'>Porcupine Tree</a></li>
-                    <li><a href="https://www.rush.com/band/" target='_blank' rel='noopener noreferrer'>Rush</a></li>
-                    <li><a href="https://qotsa.com/" target='_blank' rel='noopener noreferrer'>Queens of the Stone Age</a></li>
-                    <li><a href="https://www.dgmlive.com/king-crimson" target='_blank' rel='noopener noreferrer'>King Crimson</a></li>
                     <li><a href="https://hakenmusic.com/" target='_blank' rel='noopener noreferrer'>Haken</a></li>
+                    <li><a href="https://caligulashorse.com/" target='_blank' rel='noopener noreferrer'>Caligula's Horse</a></li>
+                    <li><a href="https://leprous.net/" target='_blank' rel='noopener noreferrer'>Leprous</a></li>
                 </ul>
                 I also enjoy playing <a href="https://www.ageofempires.com/games/aoeiide/" target='_blank' rel='noopener noreferrer'>Age of Empires II</a>, one of the most famous real-time strategy PC games of all time.
             </Typography>

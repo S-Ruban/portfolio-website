@@ -1,7 +1,7 @@
 import React from 'react';
 import { AppBar, Typography, Grid } from '@mui/material';
 import { Link } from 'react-router-dom';
-import resume from './RubanS_PlushCV_Resume.pdf'
+import resume from './RubanS_Resume_Dec_2024.pdf'
 
 const relAlign = {
   display: 'flex',
